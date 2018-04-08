@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "test": "eslint pages"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^5.1.0",
     "react": "^16.3.1",

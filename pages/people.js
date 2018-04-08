@@ -10,7 +10,7 @@ const People = props => (
       {console.log(props.people)}
       {props.people.map(({ id, name }) => (
         <li key={name}>
-          <Link as={`/people/${id}/{name}`} href={`/peopleDetails?id=${id}`}>
+          <Link as={`/people/${id}`} href={`/peopleDetails?id=${id}`}>
             <a>{name}</a>
           </Link>
         </li>
