@@ -1,7 +1,7 @@
-import React from 'react';
-
 export default () => (
   <div>
-    <p>Hello world</p>
+    <h1>Explore Star Wars Universe</h1>
+    <p><a href="/people">People</a></p>
+    <p><a href="/planets">Planets</a></p>
   </div>
 );
