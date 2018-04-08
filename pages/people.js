@@ -7,7 +7,6 @@ const People = props => (
     <Header />
     <h1>People</h1>
     <ul>
-      {console.log(props.people)}
       {props.people.map(({ id, name }) => (
         <li key={name}>
           <Link as={`/people/${id}`} href={`/peopleDetails?id=${id}`}>
