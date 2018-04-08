@@ -6,6 +6,7 @@ const People = props => (
     <Header />
     <h1>People</h1>
     <ul>
+      {console.log(props.people)}
       {props.people.map(({ name }) => <li key={name}>{name}</li>)}
     </ul>
   </div>
