@@ -19,6 +19,8 @@ const People = props => (
 );
 
 People.getInitialProps = async () => {
+  // const lodash = require('lodash');
+  // const lodash = await import('lodash');
   console.log('getInitialProps');
   const res = await fetch('https://swapi.co/api/people/');
   const data = await res.json();
