@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch';
 import Header from '../components/Header';
 
 const People = props => (
@@ -10,13 +11,12 @@ const People = props => (
   </div>
 );
 
-People.getInitialProps = () => {
+People.getInitialProps = async () => {
   console.log('getInitialProps');
+  const res = await fetch('https://swapi.co/api/people/');
+  const data = await res.json();
   return {
-    people: [
-      { name: 'Luke' },
-      { name: 'R2D2' },
-    ],
+    people: data.results,
   };
 };
 
